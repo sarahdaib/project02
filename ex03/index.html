@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 03 - Colors & Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Colors & Opacity</h1>
+
+    <section class="section">
+        <h2>1. Color Swatch Palette</h2>
+        <div class="palette">
+            <div class="swatch named">
+                <span>Named<br>orange</span>
+            </div>
+            <div class="swatch hex">
+                <span>HEX<br>#3498db</span>
+            </div>
+            <div class="swatch rgb">
+                <span>RGB<br>rgb(46, 204, 113)</span>
+            </div>
+            <div class="swatch rgba">
+                <span>RGBA<br>rgba(155, 89, 182, 0.6)</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>2. Opacity vs RGBA Comparison</h2>
+        <p class="desc">Notice how opacity fades the entire element (including text), while RGBA only affects the background color.</p>
+
+        <div class="comparison-container">
+            <div class="box opacity-box">
+                <h3>opacity: 0.5</h3>
+                <p>This text is faded because opacity cascades to all child elements.</p>
+            </div>
+
+            <div class="box rgba-box">
+                <h3>rgba(..., 0.5)</h3>
+                <p>This text is crisp and clear because RGBA only changes the background transparency.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter V - Exercise 01: Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <span class="logo">Ex01: Positioning</span>
+        <nav class="nav-links">
+            <a href="#cards">Cards</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main class="main-container" id="cards">
+        <h1>Positioning Showcase</h1>
+        <p class="intro">Scroll down to see the fixed navigation bar and back-to-top button in action.</p>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <span class="badge">New</span>
+                <h3>Card Item 1</h3>
+                <p>This card has <code>position: relative</code>, serving as the positioning context for the absolute badge.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge sale">Sale</span>
+                <h3>Card Item 2</h3>
+                <p>Absolute elements will look upwards through their ancestors until they find one with a positioning property other than static.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge hot">Hot</span>
+                <h3>Card Item 3</h3>
+                <p>By default, elements are <code>position: static</code> and ignore top/left/right/bottom offsets.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge update">Updated</span>
+                <h3>Card Item 4</h3>
+                <p>Proper nesting ensures the badge stays pinned to the top-right corner of each individual card.</p>
+            </div>
+
+        </div>
+
+        <div class="spacer"></div>
+    </main>
+
+    <a href="#" class="back-to-top">Top ↑</a>
+
+</body>
+</html>

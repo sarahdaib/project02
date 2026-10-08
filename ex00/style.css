@@ -1,0 +1,34 @@
+/* إعدادات شريط التنقل */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* تعديل بسيط لقائمة شريط التنقل عشان تطلع مرتبة أفقياً */
+.nav-container ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+/* إعدادات شبكة البطاقات */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* شكل البطاقة عشان تبين واضحة قدامك */
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+}

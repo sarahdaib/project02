@@ -1,0 +1,85 @@
+/* Base Reset & Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.shapes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* --------------------------------------------------
+   1. Square (Equal width and height)
+   -------------------------------------------------- */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #e63946;
+}
+
+/* --------------------------------------------------
+   2. Rectangle (Different width and height)
+   -------------------------------------------------- */
+.rectangle {
+  width: 160px;
+  height: 90px;
+  background-color: #457b9d;
+}
+
+/* --------------------------------------------------
+   3. Perfect Circle (Equal dimensions + 50% radius)
+   -------------------------------------------------- */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #2a9d8f;
+  border-radius: 100px;
+}
+
+/* --------------------------------------------------
+   4. Capsule Pill (Width > Height + High border-radius)
+   -------------------------------------------------- */
+.pill {
+  width: 160px;
+  height: 70px;
+  background-color: #e9c46a;
+  border-radius: 50%; /* Any radius >= half height turns edges into half-circles */
+}
+
+/* --------------------------------------------------
+   5. CSS Triangle (Border Trick)
+   -------------------------------------------------- */
+.triangle {
+  /* Set explicit content box size to 0 */
+  width: 0;
+  height: 0;
+
+  /* Transparent left & right borders form the sides */
+
+
+  border-left: 50px solid transparent ;
+  border-right: 50px solid transparent ;
+
+  /* Colored bottom border forms the triangle body pointing UP */
+  border-bottom: 90px solid #f4a261; 
+}
